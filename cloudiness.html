@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Add a title here -->
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white p-0">
+      <a class="navbar-brand bg-info text-white p-2" href="index.html">Latitude</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <!-- End of navbar -->
+
+    <!-- Start of container -->
+      <!-- Link -->
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+          <!-- Dropdown -->
+          <!-- Plots -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id = "navbardrop" data-toggle = "dropdown" href="#">Plots</a>
+            <div class = "dropdown-menu">
+              <a class = "dropdown-item" href = "temp.html">Temperature</a>
+              <a class = "dropdown-item" href = "humidity.html">Humidity</a>
+              <a class = "dropdown-item" href = "cloudiness.html">Cloudiness</a>
+              <a class = "dropdown-item" href = "wind.html">Wind Speed</a>
+            </div>
+          </li>
+
+          <!-- Comparison -->
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+
+          <!-- Data -->
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+          <!-- Start of Visualizations imageNav Area -->
+          <div class = "container py-4">
+            <div class = "row">
+              <div class = "col-sm-7 pt-3 mx-auto bg-white">
+                <h1 class = "text-info">Cloudiness</h1>
+                <hr>
+                <img src = "assets/images/Fig3.png" alt = "Wind Speed" class = "img-fluid">
+                <p>When comparing Latitude vs Cloudiness, there is no clear relationship or correlation between these factors.</p>
+              </div>
+              <div class = "col-sm-4 py-3 mx-auto bg-white" style = "height: 100%">
+                <h3 class = "text-info">Visualizations</h3>
+                <hr>
+                <div class = "row row-cols-sm-2">
+                  <div class = "col mb-4">
+                    <a class = "list-group-item list-group-item-action p-0 container_img" href = "temp.html">
+                      <img src = "assets/images/Fig1.png" alt = "Max Temperature" class = "img-fluid">
+      
+                    </a>
+                  </div>
+                  <div class = "col mb-4">
+                    <a class = "list-group-item list-group-item-action p-0 container_img" href = "humidity.html">
+                      <img src = "assets/images/Fig2.png" alt = "Humidity" class = "img-fluid">
+      
+                    </a>
+                  </div>
+                  <div class = "col mb-4">
+                    <a class = "list-group-item active p-0 container_img" href = "cloudiness.html">
+                      <img src = "assets/images/Fig3.png" alt = "Cloudiness" class = "img-fluid">
+      
+                    </a>
+                  </div>
+                  <div class = "col mb-4">
+                    <a class = "list-group-item list-group-item-action p-0 container_img" href = "wind.html">
+                      <img src = "assets/images/Fig4.png" alt = "Wind Speed" class = "img-fluid">
+      
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of the Visualizations imageNav Area -->
+
+    <!-- End of container -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
